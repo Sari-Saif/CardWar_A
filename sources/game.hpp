@@ -5,16 +5,20 @@
 #ifndef CARDWAR_A_GAME_HPP
 #define CARDWAR_A_GAME_HPP
 
+#include <string>
+use namespace std;
 
 class Game {
 public:
+    Player c,c1;
+    Game(){}
+    Game(Player c,Player v){}
     void playTurn();
-    void printLastTurn();
+    string printLastTurn();
     void playAll();
-    void printWiner();
-    void printLog();
-    void printStats();
-
+    string printWiner();
+    string printLog();
+    string printStats();
 };
 
 

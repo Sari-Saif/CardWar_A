@@ -7,6 +7,8 @@
 class player{
 
     public:
+        Player(){}
+        Player(String s){}
         void playTurn();
         void stacksize();
         void cardesTaken();
