@@ -1,9 +1,9 @@
 //
 // Created by sari on 3/26/23.
 //
-#include "player.h"
-#include "card.h"
-#include "game.h"
+#include "player.hpp"
+#include "Card.hpp"
+#include "game.hpp"
 using namespace std;
 namespace ariel{}
 
