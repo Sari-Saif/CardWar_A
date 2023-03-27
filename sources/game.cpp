@@ -13,29 +13,45 @@
 #include <string>
 #include "iostream"
 
+/*
+ * there alot of things need to add in this file ....
+ */
+
 using namespace std;
-namespace ariel{}
-
-
-Game::Game(){}
-Game:Game(Player c,Player v){
-if(c.stacksize()>26 || v.stacksize()>26)
+namespace ariel
 {
-    throw
+Game::Game(){}
+Game:Game(Player& c,Player& v){
+    if(c.stacksize()>26 || v.stacksize()>26)
+    {
+    throw std::out_of_range("stack size bounded !!");
+    }
+    this->_player0= v;
+    this->_player1= c;
 }
-this->c1=v;
-this->c=c;
+        void Game::playTurn()
+        {
 
-}
-        void Game::playTurn(){}
-        void Game::printLastTurn(){}
-        void Game::playAll(){}
-        void Game::printWiner(){}
-        void Game::printLog(){}
-        void Game::printStats(){}
+        }
+        void Game::printLastTurn()
+        {
+            return "null";
+        }
+        void Game::playAll()
+        {
 
-Game:G
-
-
-
+        }
+        void Game::printWiner()
+        {
+            return "null";
+        }
+        void Game::printLog()
+        {
+            return "null";
+        }
+        void Game::printStats()
+        {
+            return "null";
+        }
 };
+}
