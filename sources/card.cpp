@@ -1,5 +1,5 @@
 /**
- * implementation  file for the Game Object
+ * implementation  file for the Card Object
  * @author Sari Saif
  * @since 2023-03-27
  */

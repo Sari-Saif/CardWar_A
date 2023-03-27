@@ -1,5 +1,5 @@
 /**
- * header file for the Game Object
+ * header file for the Player Object
  * @author Sari Saif
  * @since 2023-03-27
  */
