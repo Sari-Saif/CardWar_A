@@ -16,8 +16,7 @@
 #include <string>
 
 using namespace std;
-namespace ariel{}
-
+namespace ariel{
 class Game
 {
 private:
@@ -39,5 +38,6 @@ public:
     void printWiner();
     void printLog();
     void printStats();
+};
 };
 #endif //CARDWAR_A_GAME_HPP

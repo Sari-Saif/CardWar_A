@@ -11,18 +11,18 @@
 #include <string>
 #include <iostream>
 using namespace std;
-namespace arie
-{}
+namespace ariel
+{
 
-        Player::Player(){}
-        Player::Player(const String& str)
+        Player::Player(){};
+        Player::Player(const string& str)
         {
             this->_name= str;
-        }
-        void Player::playTurn(){}
-        int Player::stacksize(){return 0;}
-        int Player::cardesTaken(){return 0;}
-
+        };
+        void Player::playTurn(){};
+        int Player::stacksize(){return 0;};
+        int Player::cardesTaken(){return 0;};
+};
 
 
 

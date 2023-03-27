@@ -13,7 +13,8 @@
  */
 #include <string>
 #include <iostream>
-
+namespace ariel
+{
 class Player
 {
 private:
@@ -28,11 +29,6 @@ public:
     void playTurn();
     int stacksize();
     int cardesTaken();
-
-
-
-
 };
-
-
+};
 #endif //CARDWAR_A_PLAYER_HPP

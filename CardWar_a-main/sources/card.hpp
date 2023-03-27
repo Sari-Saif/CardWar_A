@@ -25,5 +25,5 @@ namespace ariel {
         Card( const string& name, int value);
         //~Card(...)
     };
-    }
+    };
 #endif //CARDWAR_A_CARD_HPP
