@@ -1,18 +1,30 @@
-//
-// Created by sari on 3/26/23.
-//
+/**
+ * header file for the Game Object
+ *
+ * @author Sari Saif
+ * @since 2023-03-27
+ */
 
 #ifndef CARDWAR_A_GAME_HPP
 #define CARDWAR_A_GAME_HPP
-
+#include "player.hpp"
+#include <iostream>
 #include <string>
+
 use namespace std;
+namespace ariel{}
 
 class Game {
+private:
+    Player player0;
+    Player player1;
 public:
-    Player c,c1;
+
+    //default
     Game(){}
+    // initiate
     Game(Player c,Player v){}
+    //functions
     void playTurn();
     string printLastTurn();
     void playAll();
@@ -20,6 +32,4 @@ public:
     string printLog();
     string printStats();
 };
-
-
 #endif //CARDWAR_A_GAME_HPP

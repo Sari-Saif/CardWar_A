@@ -7,7 +7,16 @@
 
 
 class Player {
+
 public:
+// variables that need to be in player class:
+// int size for stack or another datastructures == 26
+// datastructure for save cards in (queue)
+//
+
+
+
+
 
 };
 
