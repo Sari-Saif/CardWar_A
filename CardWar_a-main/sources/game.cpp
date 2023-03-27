@@ -19,9 +19,9 @@
 
 using namespace std;
 namespace ariel
-{}
-Game::Game(){}
-Game:Game(Player& c,Player& v)
+{
+Game::Game(){};
+Game::Game(Player& c,Player& v)
 {
     if(c.stacksize()>26 || v.stacksize()>26)
     {
@@ -29,28 +29,29 @@ Game:Game(Player& c,Player& v)
     }
     this->_player0= v;
     this->_player1= c;
-}
+};
         void Game::playTurn()
         {
 
-        }
+        };
         void Game::printLastTurn()
         {
-            return "null";
-        }
+            
+        };
         void Game::playAll()
         {
 
-        }
+        };
         void Game::printWiner()
         {
-            return "null";
-        }
+            
+        };
         void Game::printLog()
         {
-            return "null";
-        }
+        
+        };
         void Game::printStats()
         {
-            return "null";
-        }
+            
+        };
+};
