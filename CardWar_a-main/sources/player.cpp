@@ -19,12 +19,11 @@ namespace arie
         {
             this->_name= str;
         }
-        void Player:: playTurn(){}
-        int Player:: stacksize(){}
-        void Player:: cardesTaken(){}
+        void Player::playTurn(){}
+        int Player::stacksize(){return 0;}
+        int Player::cardesTaken(){return 0;}
 
 
 
 
 
-};

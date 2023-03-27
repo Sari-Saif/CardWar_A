@@ -27,7 +27,7 @@ public:
     Player(const string& str);
     void playTurn();
     int stacksize();
-    void cardesTaken();
+    int cardesTaken();
 
 
 
