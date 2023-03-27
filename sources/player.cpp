@@ -1,17 +1,27 @@
-//
-// Created by sari on 3/26/23.
-//
+/**
+ * implementation  file for the Player Object
+ * @author Sari Saif
+ * @since 2023-03-27
+ */
 
 #include "player.hpp"
+/**
+ * external libraries
+ */
+#include <string>
+#include <iostream>
+using namespace std;
+namespace arie
+{}
 
-class player{
-
-    public:
-        Player(){}
-        Player(String s){}
-        void playTurn();
-        void stacksize();
-        void cardesTaken();
+        Player::Player(){}
+        Player::Player(const String& str)
+        {
+            this->_name= str;
+        }
+        void Player:: playTurn(){}
+        int Player:: stacksize(){}
+        void Player:: cardesTaken(){}
 
 
 

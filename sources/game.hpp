@@ -18,7 +18,8 @@
 use namespace std;
 namespace ariel{}
 
-class Game{
+class Game
+{
 private:
     // think to add new private function
     // all of the information will be included by progress...

@@ -11,7 +11,7 @@
  * external libraries
  */
 #include <string>
-#include "iostream"
+#include <iostream>
 
 /*
  * there alot of things need to add in this file ....
@@ -19,9 +19,10 @@
 
 using namespace std;
 namespace ariel
-{
+{}
 Game::Game(){}
-Game:Game(Player& c,Player& v){
+Game:Game(Player& c,Player& v)
+{
     if(c.stacksize()>26 || v.stacksize()>26)
     {
     throw std::out_of_range("stack size bounded !!");
@@ -53,5 +54,3 @@ Game:Game(Player& c,Player& v){
         {
             return "null";
         }
-};
-}

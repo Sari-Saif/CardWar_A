@@ -1,19 +1,33 @@
-//
-// Created by sari on 3/26/23.
-//
+/**
+ * header file for the Game Object
+ * @author Sari Saif
+ * @since 2023-03-27
+ */
 
 #ifndef CARDWAR_A_PLAYER_HPP
 #define CARDWAR_A_PLAYER_HPP
 
-class Player {
+#include "card.hpp"
+/**
+ * external libraries
+ */
+#include <string>
+#include <iostream>
 
+
+class Player
+{
+private:
+    string _name;
 public:
 // variables that need to be in player class:
 // int size for stack or another datastructures == 26
 // datastructure for save cards in (queue)
 //
+    Player();
+    Player(const String& str);
     void playTurn();
-    void stacksize();
+    int stacksize();
     void cardesTaken();
 
 
