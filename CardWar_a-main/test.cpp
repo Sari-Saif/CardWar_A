@@ -33,9 +33,12 @@ TEST_CASE("Safe Players")
         CHECK(2+i==comption);
     }
 }
-TEST_CASE("")
+TEST_CASE("Counstructor checking")
 {
     Player p("Sari");
     Player  p1("Sami");
     Game game(p,p1);
+    CHECK_NOTHROW(Game{p,p1});
 }
+
+
