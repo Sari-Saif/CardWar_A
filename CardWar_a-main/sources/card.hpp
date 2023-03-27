@@ -14,7 +14,7 @@
 #include <iostream>
 
 using namespace std;
-namespace ariel {}
+namespace ariel {
     class Card{
     private:
 
@@ -25,4 +25,5 @@ namespace ariel {}
         Card( const string& name, int value);
         //~Card(...)
     };
+    }
 #endif //CARDWAR_A_CARD_HPP

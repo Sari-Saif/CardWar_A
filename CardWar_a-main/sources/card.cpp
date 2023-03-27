@@ -11,12 +11,13 @@
 #include <string>
 #include <iostream>
 using namespace std;
-namespace arie
-{}
+namespace ariel
+{
     //default
-    Card::Card(){}
+    Card::Card(){};
     Card::Card(const string& name,int v)
     {
         this->_name = name;
         this->_value =v;
-    }
+    };
+};

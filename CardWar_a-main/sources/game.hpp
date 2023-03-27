@@ -34,10 +34,10 @@ public:
     Game(Player& p,Player& p1);
     //functions
     void playTurn();
-    string printLastTurn();
+    void printLastTurn();
     void playAll();
-    string printWiner();
-    string printLog();
-    string printStats();
+    void printWiner();
+    void printLog();
+    void printStats();
 };
 #endif //CARDWAR_A_GAME_HPP
