@@ -30,7 +30,7 @@ public:
     Game();
     // initiate
     // need destructors there need dont to ignore him
-    Game(Player& p,Player& p1);
+    Game(Player& player,Player& player1);
     //functions
     void playTurn();
     void printLastTurn();
