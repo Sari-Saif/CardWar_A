@@ -30,6 +30,8 @@ Game::Game(Player& c,Player& v)
     this->_player0= v;
     this->_player1= c;
 };
+//~destructor
+
         void Game::playTurn()
         {
 

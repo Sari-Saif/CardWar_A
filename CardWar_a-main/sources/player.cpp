@@ -19,6 +19,7 @@ namespace ariel
         {
             this->_name= str;
         };
+        // need to ~destructor
         void Player::playTurn(){};
         int Player::stacksize(){return 0;};
         int Player::cardesTaken(){return 0;};
