@@ -47,15 +47,15 @@ TEST_CASE("Simoulation 1 ")
     while (comption > 0)
     {
         p.playTurn();
-        comption--;
-        bool pAlive = p.stacksize() > 21;
-        bool p1_WIN = (p1.stacksize() + p1.cardesTaken() > 26);
-        CHECK(p1.stacksize() + p.stacksize() == 52);
+        comption=comption-1;
+        bool pAlive = (p.stacksize()>21);
+        bool p1_WIN = (p1.stacksize()+p1.cardesTaken()>26);
+        CHECK(p1.stacksize()+p.stacksize() == 52);
 
         if (pAlive)
         {
-            int after_round = p.cardesTaken() + p.stacksize();
-            CHECK(p1.stacksize() - after_round < 0); // maybe yes or not
+            int after_round =p.cardesTaken()+p.stacksize();
+            CHECK(p1.stacksize()<after_round); // maybe yes or not
         }
         else if (p1_WIN)
         {
@@ -63,7 +63,9 @@ TEST_CASE("Simoulation 1 ")
         }
         else
         {
-            CHECK((p1.stacksize() == p.stacksize()) || (p1.cardesTaken() == p.cardesTaken())); // draww or p is the winner on current round
+            CHECK((p1.stacksize() == p.stacksize()));
+            // draww or p is the winner on current round
+            CHECK((p1.cardesTaken() == p.cardesTaken()));
         }
     }
 }
