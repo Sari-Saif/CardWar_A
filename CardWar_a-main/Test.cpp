@@ -40,6 +40,24 @@ TEST_CASE("Counstructor checking")
     CHECK_FALSE(p1.stacksize()+p.stacksize()>52);
     
 }
+TEST_CASE("Game rules")
+{
+    Player p("Sari");
+    Player p1("Sami");
+    Game game(p, p1);
+    game.playAll();
+    bool winner = (p.stacksize()<p1.stacksize() ? true:false );
+    bool p_win = true;
+    bool p1_win = true;
+    bool draw = true;
+    bool check = p.stacksize()+p.cardesTaken()>p1.cardesTaken()+p1.stacksize();
+    bool check_draw = (p.stacksize()+p.cardesTaken())==(p1.cardesTaken()+p1.stacksize());
+    CHECK_FALSE(winner==p_win);
+    CHECK(winner==p1_win);
+    CHECK(winner==check);
+    CHECK(draw==check);
+    CHECK_FALSE(draw==check);
+}
 TEST_CASE("Simoulation 1 ")
 {
     Player p("Sari");
