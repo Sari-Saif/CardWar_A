@@ -34,8 +34,11 @@ TEST_CASE("Counstructor checking")
     CHECK_NOTHROW(Game{p, p1});
     CHECK_THROWS(Game(p, p));
     CHECK_THROWS(Player("")); // empty and its not right !
-    CHECK(p.stacksize() == 26);
-    CHECK(p1.stacksize() == 26);
+    CHECK(p.stacksize()+p.cardesTaken() == 26);
+    CHECK(p1.stacksize()+p1.cardesTaken() == 26);
+    CHECK(p1.stacksize()+p.stacksize() == 52);
+    CHECK_FALSE(p1.stacksize()+p.stacksize()>52);
+    
 }
 TEST_CASE("Simoulation 1 ")
 {
