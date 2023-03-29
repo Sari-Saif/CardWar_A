@@ -76,8 +76,16 @@ TEST_CASE("Game rules")
     }
     bool check_draw = (p.stacksize() + p.cardesTaken()) == (p1.cardesTaken() + p1.stacksize());
     CHECK_FALSE(winner == p1_win);
-    CHECK(draw || p_win);
-    CHECK((p1_win) && (check_draw));
+    if (draw)
+    {
+        CHECK(draw);
+    }
+    else
+    {
+        CHECK(p_win);
+    }
+    CHECK(p1_win);
+    CHECK(check_draw);
     if (check_draw)
     {
         CHECK_EQ(p.stacksize(), p1.stacksize());
