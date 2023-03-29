@@ -14,17 +14,13 @@ using namespace std;
 namespace ariel
 {
 
-        Player::Player(){};
-        Player::Player(const string& str)
-        {
-            this->_name= str;
-        };
-        // need to ~destructor
-        void Player::playTurn(){};
-        int Player::stacksize(){return 0;};
-        int Player::cardesTaken(){return 0;};
+    Player::Player(){};
+    Player::Player(const string &str)
+    {
+        this->_name = str;
+    };
+    // need to ~destructor
+    void Player::playTurn(){};
+    int Player::stacksize() { return 26; };
+    int Player::cardesTaken() { return 0; };
 };
-
-
-
-
